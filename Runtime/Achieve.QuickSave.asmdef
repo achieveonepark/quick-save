@@ -1,0 +1,20 @@
+{
+    "name": "Achieve.QuickSave",
+    "rootNamespace": "",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.nuget.newtonsoft-json",
+            "expression": "0.0.0",
+            "define": "USE_NEWTONSOFT_JSON"
+        }
+    ],
+    "noEngineReferences": false
+}
