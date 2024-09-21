@@ -1,16 +1,16 @@
-namespace Achieve.QuickSave
+ï»¿namespace Achieve.QuickSave
 {
     public sealed partial class QuickSave<T>
     {
         /// <summary>
-        /// µ¥ÀÌÅÍ¸¦ ÀúÀåÇÕ´Ï´Ù.
+        /// ë°ì´í„°ë¥¼ ì €ì¥í•©ë‹ˆë‹¤.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="data"></param>
         public void SaveData<T>(T data) => SaveDataInternal(data);
 
         /// <summary>
-        /// µ¥ÀÌÅÍ¸¦ ·ÎµåÇÏ¸ç, ·ÎµåÇÑ °´Ã¼¸¦ ¹İÈ¯ÇÕ´Ï´Ù.
+        /// ë°ì´í„°ë¥¼ ë¡œë“œí•˜ë©°, ë¡œë“œí•œ ê°ì²´ë¥¼ ë°˜í™˜í•©ë‹ˆë‹¤.
         /// </summary>
         /// <returns></returns>
         public T LoadData() => LoadDataInternal();

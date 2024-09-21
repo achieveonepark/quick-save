@@ -1,4 +1,4 @@
-#if USE_ENCRYPT
+﻿#if USE_ENCRYPT
 using Achieve.DataProtector;
 #endif
 using MemoryPack;

@@ -1,4 +1,4 @@
-namespace Achieve.QuickSave
+ï»¿namespace Achieve.QuickSave
 {
     public sealed partial class QuickSave<T>
     {
@@ -11,7 +11,7 @@ namespace Achieve.QuickSave
             private string _encryptionKey;
 
             /// <summary>
-            /// ¾Ï/º¹È£È­¸¦ »ç¿ëÇÕ´Ï´Ù.
+            /// ì•”/ë³µí˜¸í™”ë¥¼ ì‚¬ìš©í•©ë‹ˆë‹¤.
             /// </summary>
             /// <param name="encryptionKey"></param>
             /// <returns></returns>
@@ -23,7 +23,7 @@ namespace Achieve.QuickSave
             }
 
             /// <summary>
-            /// Save ÆÄÀÏÀÇ ¹öÀüÀ» ¸í¸íÇÕ´Ï´Ù. ÀÔ·ÂÇÏÁö ¾ÊÀ¸¸é 0À» ¹Ù¶óº¾´Ï´Ù.
+            /// Save íŒŒì¼ì˜ ë²„ì „ì„ ëª…ëª…í•©ë‹ˆë‹¤. ì…ë ¥í•˜ì§€ ì•Šìœ¼ë©´ 0ì„ ë°”ë¼ë´…ë‹ˆë‹¤.
             /// </summary>
             /// <param name="version"></param>
             /// <returns></returns>
