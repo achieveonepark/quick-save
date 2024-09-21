@@ -1,7 +1,10 @@
 {
     "name": "Achieve.QuickSave",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:756335c0388f7114790e504ed368ae1d",
+        "GUID:08eba284b81cc6646b64053dd4afa471"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
@@ -11,9 +14,9 @@
     "defineConstraints": [],
     "versionDefines": [
         {
-            "name": "com.unity.nuget.newtonsoft-json",
+            "name": "com.achieve.data-protector",
             "expression": "0.0.0",
-            "define": "USE_NEWTONSOFT_JSON"
+            "define": "USE_ENCRYPT"
         }
     ],
     "noEngineReferences": false
