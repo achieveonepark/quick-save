@@ -35,7 +35,7 @@ namespace Achieve.QuickSave
 
             if(!File.Exists(filePath))
             {
-                throw new FileNotFoundException($"The <color=yellow>{typeof(T).Name}_{_version}.acqs</color> file does not exist.");
+                throw new FileNotFoundException($"The <color=yellow>{typeof(T).Name}.acqs</color> file does not exist.");
             }
 
             byte[] binary = File.ReadAllBytes(filePath);
