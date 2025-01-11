@@ -12,6 +12,7 @@ Choose one of the following installation methods:
 ### Getting Started: Install MemoryPack via [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity)
 1. Install NuGetForUnity according to the instructions in the repository.
 2. With NuGetForUnity installed, add MemoryPack to your project.
+3. Please install [MemoryPack](https://github.com/cysharp/memorypack) to use this package.
 
 This setup prepares MemoryPack for seamless binary serialization and deserialization within Unity.
 
