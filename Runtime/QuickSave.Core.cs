@@ -59,7 +59,12 @@ namespace Achieve.QuickSave
                 Directory.CreateDirectory(path);
             }
 
-            var result = Path.Combine(path, $"{typeof(T).Name}_{_version}.acqs");
+            var result = 
+#if USE_ENCRYPT
+                Path.Combine(path, $"{typeof(T).Name}_{_version}.acqs");
+#else
+                Path.Combine(path, $"{typeof(T).Name}.acqs");
+            #endif
             return Path.GetFullPath(result);
         }
     }
