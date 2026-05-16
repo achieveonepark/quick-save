@@ -14,5 +14,10 @@
         /// </summary>
         /// <returns></returns>
         public T LoadData() => LoadDataInternal();
+
+        /// <summary>
+        /// 저장 파일을 삭제합니다.
+        /// </summary>
+        public void DeleteData() => DeleteDataInternal();
     }
 }

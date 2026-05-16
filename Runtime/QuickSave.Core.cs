@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Achieve.QuickSave
 {
-    public sealed partial class QuickSave<T>
+    public sealed partial class QuickSave<T> where T : class
     {
 #if USE_ENCRYPT
         private bool _isEncrypt = false;
@@ -35,7 +35,7 @@ namespace Achieve.QuickSave
 
             if(!File.Exists(filePath))
             {
-                throw new FileNotFoundException($"The <color=yellow>{typeof(T).Name}.acqs</color> file does not exist.");
+                return null;
             }
 
             byte[] binary = File.ReadAllBytes(filePath);
@@ -48,6 +48,13 @@ namespace Achieve.QuickSave
 #endif
             T data = MemoryPackSerializer.Deserialize<T>(binary);
             return data;
+        }
+
+        private void DeleteDataInternal()
+        {
+            string filePath = GetFilePath();
+            if (File.Exists(filePath))
+                File.Delete(filePath);
         }
 
         private string GetFilePath()
