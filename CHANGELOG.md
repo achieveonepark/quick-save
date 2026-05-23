@@ -1,6 +1,6 @@
 # Quick Save
 
-## [1.1.0] - 2026-05-23
+## [1.0.3] - 2026-05-23
 
 ### Added
 - `SaveDataAsync()`, `LoadDataAsync()` 비동기 메서드 추가 — 메인 스레드 블로킹 없이 파일 I/O 가능

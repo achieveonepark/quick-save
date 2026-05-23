@@ -2,7 +2,7 @@
   "name": "com.achieve.quick-save",
   "displayName": "Quick Save",
   "author": "Achieveone",
-  "version": "1.1.0",
+  "version": "1.0.3",
   "unity": "2022.3",
   "description": "A save feature has been implemented using MemoryPack, storing data in binary file format.",
   "keywords": [
