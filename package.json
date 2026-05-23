@@ -2,7 +2,7 @@
   "name": "com.achieve.quick-save",
   "displayName": "Quick Save",
   "author": "Achieveone",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "unity": "2022.3",
   "description": "A save feature has been implemented using MemoryPack, storing data in binary file format.",
   "keywords": [
@@ -19,6 +19,6 @@
     "type": "git"
   },
   "_upm": {
-    "changelog": "## Added\n- `DeleteData()` 메서드 추가\n- Editor 메뉴 `Achieve/Delete Save` 추가"
+    "changelog": "## Added\n- `SaveDataAsync()`, `LoadDataAsync()` 비동기 메서드 추가\n- `HasSaveData()` 메서드 추가\n## Fixed\n- `Builder.UseVersion()` 버그 수정\n- `SaveData()` 타입 파라미터 섀도잉 버그 수정\n- `LoadData()` 역직렬화 실패 에러 구분 개선\n## Performance\n- 저장 디렉토리 생성을 Build() 시점 한 번으로 최적화"
   }
 }
