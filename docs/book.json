@@ -1,0 +1,16 @@
+{
+  "title": "Quick Save",
+  "description": "Unity binary save system powered by MemoryPack",
+  "author": "Achieveone",
+  "language": "ko",
+  "plugins": ["-lunr", "-search", "search-plus", "theme-default"],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    }
+  },
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  }
+}
