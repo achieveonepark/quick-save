@@ -9,4 +9,4 @@
   * [암호화 & 버전 관리](guide/encryption.md)
 * [API 레퍼런스](api/README.md)
   * [Builder](api/builder.md)
-  * [QuickSave\<T\> 메서드](api/methods.md)
+  * [QuickSave 메서드](api/methods.md)

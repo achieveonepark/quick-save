@@ -27,11 +27,12 @@ jobs:
       - name: Install HonKit
         run: npm install -g honkit
 
-      - name: Install HonKit plugins
-        run: cd docs && honkit install
-
       - name: Build docs
-        run: honkit build docs _site
+        run: |
+          mkdir -p _site/quick-save
+          cd docs && honkit build . ../_site/quick-save
+          echo "somiri.dev" > ../_site/CNAME
+          printf '<html><head><meta http-equiv="refresh" content="0;url=/quick-save/"></head></html>\n' > ../_site/index.html
 
       - uses: actions/upload-pages-artifact@v3
         with:
