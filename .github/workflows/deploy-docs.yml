@@ -28,11 +28,7 @@ jobs:
         run: npm install -g honkit
 
       - name: Build docs
-        run: |
-          mkdir -p _site/quick-save
-          cd docs && honkit build . ../_site/quick-save
-          echo "somiri.dev" > ../_site/CNAME
-          printf '<html><head><meta http-equiv="refresh" content="0;url=/quick-save/"></head></html>\n' > ../_site/index.html
+        run: cd docs && honkit build . ../_site
 
       - uses: actions/upload-pages-artifact@v3
         with:
