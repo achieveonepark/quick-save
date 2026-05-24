@@ -22,6 +22,12 @@ const koSidebar = [
       { text: 'Builder', link: '/api/builder' },
       { text: 'QuickSave<T> 메서드', link: '/api/methods' },
     ]
+  },
+  {
+    text: '기타',
+    items: [
+      { text: '변경 이력', link: '/changelog' },
+    ]
   }
 ]
 
@@ -46,6 +52,12 @@ const enSidebar = [
     items: [
       { text: 'Builder', link: '/en/api/builder' },
       { text: 'QuickSave<T> Methods', link: '/en/api/methods' },
+    ]
+  },
+  {
+    text: 'More',
+    items: [
+      { text: 'Changelog', link: '/en/changelog' },
     ]
   }
 ]
