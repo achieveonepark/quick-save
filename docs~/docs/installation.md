@@ -1,0 +1,51 @@
+---
+sidebar_position: 2.5
+---
+
+# 설치
+
+## 사전 준비: MemoryPack 설치
+
+Quick Save는 MemoryPack에 의존합니다. 먼저 [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity)를 통해 MemoryPack을 설치하세요.
+
+1. NuGetForUnity를 프로젝트에 설치합니다.
+2. Unity 메뉴에서 **NuGet > Manage NuGet Packages**를 엽니다.
+3. `MemoryPack`을 검색하여 설치합니다.
+
+---
+
+## Quick Save 설치
+
+### Unity Package Manager (UPM) — 권장
+
+1. Unity 에디터에서 **Window > Package Manager**를 엽니다.
+2. 좌측 상단 `+` 버튼 클릭 → **Add package from git URL...** 선택
+3. 아래 URL을 입력하고 **Add**를 클릭합니다.
+
+```
+https://github.com/achieveonepark/QuickSave.git#1.0.3
+```
+
+### manifest.json 직접 편집
+
+프로젝트의 `Packages/manifest.json` 파일을 열고 `dependencies`에 추가합니다.
+
+```json
+{
+  "dependencies": {
+    "com.achieve.quick-save": "https://github.com/achieveonepark/QuickSave.git#1.0.3"
+  }
+}
+```
+
+---
+
+## 암호화 기능 설치 (선택)
+
+암호화가 필요한 경우 [DataProtector](https://github.com/achieveonepark/DataProtector) 패키지를 추가로 설치합니다.
+
+```
+https://github.com/achieveonepark/DataProtector.git
+```
+
+DataProtector가 프로젝트에 존재하면 Assembly Definition이 자동으로 `USE_ENCRYPT` 심볼을 정의하여 Builder의 `UseEncryption()`, `UseVersion()` 메서드가 활성화됩니다.
