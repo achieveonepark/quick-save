@@ -1,7 +1,4 @@
 {
-  "pages": [
-    "builder",
-    "methods"
-  ],
-  "title": "API"
+  "title": "API",
+  "pages": ["methods", "builder"]
 }
