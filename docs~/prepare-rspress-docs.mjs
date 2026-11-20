@@ -136,6 +136,16 @@ pageType: blank
 `,
 );
 
+pages.set('404.mdx', `---
+pageType: blank
+title: '404'
+---
+
+# 페이지를 찾을 수 없습니다
+
+<a href="/quick-save/ko/">한국어 문서 홈으로 이동</a>
+`);
+
 for (const [target, content] of pages) {
   const destination = path.join(outputDir, target);
   await mkdir(path.dirname(destination), { recursive: true });

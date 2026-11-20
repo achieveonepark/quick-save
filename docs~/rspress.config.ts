@@ -7,7 +7,14 @@ export default defineConfig({
   base: '/quick-save/',
   title: 'Quick Save',
   description: 'Quick Save documentation',
-  lang: 'ko',
+  lang: 'ko-KR',
+  locales: [
+    { lang: 'ko', label: '한국어' },
+    { lang: 'en', label: 'English' },
+    { lang: 'ja', label: '日本語' },
+    { lang: 'zh', label: '简体中文' },
+  ],
+  route: { localeRedirect: 'never' },
   logo: {
     light: '/logo.svg',
     dark: '/logo.svg',
@@ -15,12 +22,6 @@ export default defineConfig({
   globalStyles: path.join(import.meta.dirname, 'global.css'),
   themeConfig: {
     darkMode: 'dark',
-    nav: [
-      { text: '한국어', link: '/ko/' },
-      { text: 'English', link: '/en/' },
-      { text: '日本語', link: '/ja/' },
-      { text: '中文', link: '/zh/' },
-    ],
     socialLinks: [
       {
         icon: 'github',
