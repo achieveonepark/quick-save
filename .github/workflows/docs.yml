@@ -1,4 +1,4 @@
-name: Deploy Docs (Fumadocs)
+name: Deploy Docs (Rspress)
 
 on:
   push:
@@ -34,7 +34,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: docs~
-        run: npm install --no-audit --no-fund
+        run: npm ci --no-audit --no-fund
 
       - name: Build static site
         working-directory: docs~
